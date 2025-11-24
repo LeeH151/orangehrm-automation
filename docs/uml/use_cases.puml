@@ -1,0 +1,44 @@
+@startuml
+'---------------------------
+' Actors
+'---------------------------
+actor Admin
+actor Employee
+
+'---------------------------
+' Use Cases
+'---------------------------
+rectangle "Login & Logout" {
+  (Login)
+  (Logout)
+}
+
+rectangle "User Management (Admin)" {
+  (CRUD User)
+  (Search / Filter User)
+  (Pagination User)
+}
+
+rectangle "Employee Management (Admin)" {
+  (CRUD Employee)
+  (Search / Filter Employee)
+  (Pagination Employee)
+}
+
+'---------------------------
+' Associations
+'---------------------------
+Admin --> (Login)
+Employee --> (Login)
+
+Admin --> (Logout)
+Employee --> (Logout)
+
+Admin --> (CRUD User)
+Admin --> (Search / Filter User)
+Admin --> (Pagination User)
+
+Admin --> (CRUD Employee)
+Admin --> (Search / Filter Employee)
+Admin --> (Pagination Employee)
+@enduml
