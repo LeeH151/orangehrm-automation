@@ -2,3 +2,5 @@ playwright
 pytest
 pytest-playwright
 requests
+plantuml
+openpyxl
