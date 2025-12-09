@@ -39,3 +39,6 @@ thêm ảnh nhân viên), phù hợp để luyện tập Playwright.
       - Rủi ro 2 (Dữ liệu chung): Dữ liệu có thể bị thay đổi bởi người dùng khác. 
       - Phương án: Thiết lập các test case để tạo dữ liệu mới hoàn toàn (ví dụ: Tên nhân viên ngẫu nhiên) và xóa dữ liệu đó 
       trong bước Teardown.
+---------------------------------------------------
+## Tuần 2 (24/11 – 30/11)
+* 

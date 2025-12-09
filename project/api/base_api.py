@@ -1,55 +1,33 @@
-'''import requests
-from project.utils.config import API_BASE
-
-class BaseAPI:
-    """API helper base class"""
-    def __init__(self):
-        self.base_url = API_BASE
-        self.headers = {
-            "Content-Type": "application/json"
-        }
-
-    def get(self, endpoint):
-        return requests.get(f"{self.base_url}{endpoint}", headers=self.headers)
-
-    def post(self, endpoint, payload):
-        return requests.post(f"{self.base_url}{endpoint}", json=payload, headers=self.headers)
-
-    def put(self, endpoint, payload):
-        return requests.put(f"{self.base_url}{endpoint}", json=payload, headers=self.headers)
-
-    def delete(self, endpoint):
-        return requests.delete(f"{self.base_url}{endpoint}", headers=self.headers)
-'''
 import requests
-from project.utils.config import API_BASE
+from project.utils.config import API_BASE_URL
+from project.utils.logger import logger
 
 class BaseAPI:
-    def __init__(self, token=None):
-        self.base_url = f"{API_BASE}/api/v2"
-        self.headers = {
-            "Content-Type": "application/json"
-        }
-        if token:
-            self.headers["Authorization"] = f"Bearer {token}"
+    def __init__(self):
+        self.base = API_BASE_URL
+        self.session = requests.Session()
+        self.session.headers.update({'Content-Type': 'application/json'})
 
-    def get(self, endpoint):
-        return requests.get(f"{self.base_url}{endpoint}", headers=self.headers)
+    def get(self, path, params=None, headers=None):
+        url = f"{self.base}{path}"
+        resp = self.session.get(url, params=params, headers=headers)
+        logger.info(f'GET {url} -> {resp.status_code}')
+        return resp
 
-    def post(self, endpoint, payload):
-        return requests.post(f"{self.base_url}{endpoint}", json=payload, headers=self.headers)
+    def post(self, path, json=None, headers=None):
+        url = f"{self.base}{path}"
+        resp = self.session.post(url, json=json, headers=headers)
+        logger.info(f'POST {url} -> {resp.status_code}')
+        return resp
 
-    def put(self, endpoint, payload):
-        return requests.put(f"{self.base_url}{endpoint}", json=payload, headers=self.headers)
+    def put(self, path, json=None, headers=None):
+        url = f"{self.base}{path}"
+        resp = self.session.put(url, json=json, headers=headers)
+        logger.info(f'PUT {url} -> {resp.status_code}')
+        return resp
 
-    def delete(self, endpoint):
-        return requests.delete(f"{self.base_url}{endpoint}", headers=self.headers)
-
-    # ✅ Helper lấy danh sách nhân viên
-    def get_employees(self):
-        res = self.get("/pim/employees")
-        if res.status_code == 200:
-            data = res.json().get("data", [])
-            return data
-        else:
-            raise Exception(f"Failed to get employees: {res.status_code} - {res.text}")
+    def delete(self, path, headers=None):
+        url = f"{self.base}{path}"
+        resp = self.session.delete(url, headers=headers)
+        logger.info(f'DELETE {url} -> {resp.status_code}')
+        return resp

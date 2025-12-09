@@ -1,5 +1,10 @@
+.venv/
 __pycache__/
+*.pyc
 .env
+.idea/
+.vscode/
+allure-results/
+pytest_cache/
 *.log
 playwright-report/
-allure-results/
