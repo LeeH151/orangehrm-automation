@@ -1,0 +1,21 @@
+@startuml
+title Hình 3.1: Tổng quan quy trình kiểm thử tự động Web UI
+
+actor Tester
+
+component "Pytest\n(Test Framework)" as Pytest
+component "Playwright\n(Automation Tool)" as Playwright
+component "Browser\n(Chromium / Firefox / WebKit)" as Browser
+component "OrangeHRM\n(Web Application)" as App
+component "Result\n(Screenshot / Video / Trace)" as Result
+
+Tester --> Pytest : Write & Run Tests
+Pytest --> Playwright : Execute Test Steps
+Playwright --> Browser : Control Browser
+Browser --> App : Interact UI
+App --> Browser : Response
+Browser --> Playwright : UI State
+Playwright --> Pytest : Test Status
+Pytest --> Result : Generate Report
+
+@enduml

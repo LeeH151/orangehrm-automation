@@ -1,0 +1,15 @@
+@startuml
+title Tổng quan quy trình kiểm thử tự động Web UI
+title Web UI Automated Testing Overview
+
+actor "Người dùng\n(User)" as User
+
+rectangle "Kịch bản kiểm thử\n(Test Script)\nPlaywright" as Playwright
+rectangle "Trình duyệt Web\n(Web Browser)\nChromium / Firefox / WebKit" as Browser
+rectangle "Báo cáo kiểm thử\n(Test Report)\nHTML / Screenshot / Log" as Report
+
+User --> Playwright : Khởi chạy kiểm thử\n(Trigger test)
+Playwright --> Browser : Thực thi thao tác\n(Execute actions)
+Browser --> Report : Sinh kết quả\n(Generate results)
+
+@enduml

@@ -1,0 +1,30 @@
+{
+  "valid_employee": {
+    "firstName": "Nguyễn",
+    "middleName": "Văn",
+    "lastName": "An",
+    "employeeId": "02023"
+  },
+  "employees": [
+    {"firstName": "Phan", "middleName": "Văn", "lastName": "K", "employeeId": "0056"},
+    {"firstName": "Lý", "middleName": "Thị", "lastName": "L", "employeeId": "0057"},
+    {"firstName": "Trương", "middleName": "Văn", "lastName": "M", "employeeId": "0058"},
+    {"firstName": "Ngô", "middleName": "", "lastName": "N", "employeeId": "0059"},
+    {"firstName": "Huỳnh", "middleName": "Thị", "lastName": "O", "employeeId": "0060"},
+    {"firstName": "Tạ", "middleName": "Văn", "lastName": "P", "employeeId": "0061"},
+    {"firstName": "Phùng", "middleName": "", "lastName": "Q", "employeeId": "0062"},
+    {"firstName": "Võ", "middleName": "Thị", "lastName": "R", "employeeId": "0063"},
+    {"firstName": "Trần", "middleName": "Văn", "lastName": "S", "employeeId": "0064"},
+    {"firstName": "Đinh", "middleName": "Thị", "lastName": "T", "employeeId": "0065"}
+  ],
+  "edit_employee": {
+    "firstName": "Trần",
+    "lastName": "Thị Hương"
+  },
+  "search_employee": {
+    "employeeId": "0100"
+  },
+  "delete_employee": {
+    "employeeId": "02022"
+  }
+}

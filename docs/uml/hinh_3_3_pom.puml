@@ -1,0 +1,16 @@
+@startuml
+title Hình 3.3: Mô hình Page Object Model trong Automation Testing
+
+component "Test Case\n(Test Script)" as Test
+component "Page Object\n(LoginPage, DashboardPage...)" as Page
+component "Playwright API\n(get_by_role, click, fill...)" as PW
+component "Browser\n(Chromium / Firefox / WebKit)" as Browser
+
+Test --> Page : Call page methods
+Page --> PW : Use Playwright actions
+PW --> Browser : Control browser
+Browser --> PW : UI response
+PW --> Page : Status
+Page --> Test : Test result
+
+@enduml

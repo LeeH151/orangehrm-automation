@@ -5,32 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5eba8d3-5eee-466f-8a95-ff941c9d5ab4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/data/users.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/fixtures/browser_fixture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/pages/admin_user_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/pages/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/pages/dashboard_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/pages/employee_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/tests/base_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/tests/ui/test_admin_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/tests/ui/test_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/utils/helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/utils/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/playwright.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/data/employee_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/pages/pim_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/tests/ui/test_pim_crud.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/tests/ui/test_pim_search.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/playwright_research.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/playwright_research.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/scope.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/scope.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/.env" beforeDir="false" afterPath="$PROJECT_DIR$/project/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/api/auth_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/api/auth_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/api/base_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/api/base_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/pytest.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/tests/api/test_login_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/tests/api/test_login_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/utils/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/utils/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/test_cases_ui.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/test_cases_ui.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/data/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/pages/dashboard_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/pages/dashboard_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/tests/ui/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/tests/ui/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/PASS_test_01_dang_nhap_thanh_cong_20251209_095631_688.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/PASS_test_02_dang_nhap_sai_mat_khau_20251209_095640_941.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/PASS_test_03_de_trong_tai_khoan_va_mat_khau_20251209_095648_124.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +32,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -56,97 +57,89 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python tests.Python tests for project.tests.conftest.test_example1.executor": "Run",
-    "Python tests.Python tests for project.tests.conftest.test_example2.executor": "Run",
-    "Python tests.Python tests for project.tests.ui.test_login.TestLogin.executor": "Run",
-    "Python tests.Python tests for project.tests.ui.test_login.TestLogin.test_login_wrong_password.executor": "Run",
-    "Python tests.Python tests for project.tests.ui.test_login.test_login_fail.executor": "Run",
-    "Python tests.Python tests for project.tests.ui.test_login.test_login_success.executor": "Run",
-    "Python tests.Python tests for project.tests.ui.test_login.test_ui_login_success.executor": "Run",
-    "Python tests.Python tests in test_admin_user.py.executor": "Run",
-    "Python tests.Python tests in test_login.py.executor": "Run",
-    "Python tests.Python tests in test_open_homepage.py.executor": "Run",
-    "Python tests.Python tests in test_smoke.py.executor": "Run",
-    "Python tests.pytest for abc.test_login_and_get_employees.executor": "Run",
-    "Python tests.pytest for project.tests.api.test_login_api.test_api_login_success.executor": "Run",
-    "Python tests.pytest for project.tests.api.test_login_api.test_get_employee_list.executor": "Run",
-    "Python tests.pytest for project.tests.api.test_login_api.test_login_and_get_employees.executor": "Run",
-    "Python tests.pytest for project.tests.test_smoke.test_open_homepage.executor": "Run",
-    "Python tests.pytest for project.tests.ui.test_login.test_01_login_success.executor": "Run",
-    "Python tests.pytest for project.tests.ui.test_login.test_03_de_trong_tai_khoan_va_mat_khau.executor": "Run",
-    "Python tests.pytest for project.tests.ui.test_login.test_login_fail.executor": "Run",
-    "Python tests.pytest in test_login_api.py.executor": "Run",
-    "Python.config.executor": "Run",
-    "Python.conftest.executor": "Run",
-    "Python.employees.executor": "Run",
-    "Python.login_page.executor": "Run",
-    "Python.settings.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "E:/LTH/nam_4/PythonProject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for project.tests.conftest.test_example1.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for project.tests.conftest.test_example2.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for project.tests.ui.test_login.TestLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for project.tests.ui.test_login.TestLogin.test_login_wrong_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for project.tests.ui.test_login.test_login_fail.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for project.tests.ui.test_login.test_login_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for project.tests.ui.test_login.test_ui_login_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_admin_user.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_login.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_open_homepage.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_smoke.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for abc.test_login_and_get_employees.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.api.test_login_api.test_api_login_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.api.test_login_api.test_get_employee_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.api.test_login_api.test_login_and_get_employees.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.test_smoke.test_open_homepage.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_add_pim.test_mandatory_fields_blank.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_login.test_01_login_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_login.test_03_de_trong_tai_khoan_va_mat_khau.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_login.test_login_case_sensitive.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_login.test_login_case_sensitive_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_login.test_login_empty_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_login.test_login_empty_username.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_login.test_login_fail.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_login.test_login_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_login.test_logout_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_add_employee_firstname_empty.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_add_employee_lastname_too_long.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_add_employee_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_add_multiple_employees.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_delete_employee.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_delete_employee_check.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_edit_employee.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_edit_employee_name_update.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_edit_employee_success.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_filter_by_include_and_subunit.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_filter_by_include_then_subunit.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_filter_by_status.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_filter_by_status_and_subunit.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_filter_subunit_and_include_separately.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_pagination.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_pagination_observe.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_crud.test_search_by_valid_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_search.test_add_employee_lastname_too_long.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_search.test_edit_employee.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_search.test_edit_employee_name_update.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for project.tests.ui.test_pim_search.test_filter_by_status_and_subunit.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_login.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_login_api.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_pim_crud.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_smoke.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.conftest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.employees.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/LTH/nam_4/PythonProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\LTH\nam_4\PythonProject\project\fixtures" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for project.tests.ui.test_login.test_03_de_trong_tai_khoan_va_mat_khau">
-    <configuration name="employees" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project/tests/api" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project/tests/api/employees.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in test_login.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/project/tests/ui/test_login.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest in test_login.py">
     <configuration name="pytest for project.tests.test_smoke.test_open_homepage" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -165,7 +158,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for project.tests.ui.test_login.test_01_login_success" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for project.tests.ui.test_login.test_login_success" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,11 +172,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;project.tests.ui.test_login.test_01_login_success&quot;" />
+      <option name="_new_target" value="&quot;project.tests.ui.test_login.test_login_success&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for project.tests.ui.test_login.test_03_de_trong_tai_khoan_va_mat_khau" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for project.tests.ui.test_pim_crud.test_add_employee_firstname_empty" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,17 +190,53 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;project.tests.ui.test_login.test_03_de_trong_tai_khoan_va_mat_khau&quot;" />
+      <option name="_new_target" value="&quot;project.tests.ui.test_pim_crud.test_add_employee_firstname_empty&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_login.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/project/tests/ui/test_login.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_smoke.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/project/tests/test_smoke.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for project.tests.ui.test_login.test_03_de_trong_tai_khoan_va_mat_khau" />
-        <item itemvalue="Python tests.Python tests in test_login.py" />
-        <item itemvalue="Python tests.pytest for project.tests.ui.test_login.test_01_login_success" />
+        <item itemvalue="Python tests.pytest in test_login.py" />
+        <item itemvalue="Python tests.pytest in test_smoke.py" />
         <item itemvalue="Python tests.pytest for project.tests.test_smoke.test_open_homepage" />
-        <item itemvalue="Python.employees" />
+        <item itemvalue="Python tests.pytest for project.tests.ui.test_pim_crud.test_add_employee_firstname_empty" />
+        <item itemvalue="Python tests.pytest for project.tests.ui.test_login.test_login_success" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +278,21 @@
       <workItem from="1764832019380" duration="606000" />
       <workItem from="1764904046911" duration="505000" />
       <workItem from="1764987902194" duration="5017000" />
-      <workItem from="1765245253555" duration="4816000" />
+      <workItem from="1765245253555" duration="7259000" />
+      <workItem from="1765291963843" duration="546000" />
+      <workItem from="1765327829235" duration="6036000" />
+      <workItem from="1765361737956" duration="1874000" />
+      <workItem from="1765364172875" duration="553000" />
+      <workItem from="1765415957733" duration="9141000" />
+      <workItem from="1765455413204" duration="3601000" />
+      <workItem from="1765466525504" duration="4459000" />
+      <workItem from="1765501111318" duration="6442000" />
+      <workItem from="1765518934610" duration="12294000" />
+      <workItem from="1765588414603" duration="10514000" />
+      <workItem from="1765677351312" duration="5303000" />
+      <workItem from="1765697698689" duration="909000" />
+      <workItem from="1765769389677" duration="454000" />
+      <workItem from="1765849878722" duration="70000" />
     </task>
     <servers />
   </component>
@@ -257,19 +300,50 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_delete_employee.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_delete_employee Coverage Results" MODIFIED="1765594415312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_login_test_login_fail.coverage" NAME="pytest for project.tests.ui.test_login.test_login_fail Coverage Results" MODIFIED="1764732974039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_abc_test_login_and_get_employees.coverage" NAME="pytest for abc.test_login_and_get_employees Coverage Results" MODIFIED="1764040725050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$.coverage" NAME=" Coverage Results" MODIFIED="1765248982285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_login_test_03_de_trong_tai_khoan_va_mat_khau.coverage" NAME="pytest for project.tests.ui.test_login.test_03_de_trong_tai_khoan_va_mat_khau Coverage Results" MODIFIED="1765249472312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$.coverage" NAME=" Coverage Results" MODIFIED="1765248982285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_add_employee_success.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_add_employee_success Coverage Results" MODIFIED="1765593835996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_filter_by_status_and_subunit.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_filter_by_status_and_subunit Coverage Results" MODIFIED="1765594491245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$settings.coverage" NAME="settings Coverage Results" MODIFIED="1764640627871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/config" />
-    <SUITE FILE_PATH="coverage/PythonProject$login_page.coverage" NAME="login_page Coverage Results" MODIFIED="1764556626164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/pages" />
-    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_api_test_login_api_test_get_employee_list.coverage" NAME="pytest for project.tests.api.test_login_api.test_get_employee_list Coverage Results" MODIFIED="1764035209317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_filter_subunit_and_include_separately.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_filter_subunit_and_include_separately Coverage Results" MODIFIED="1765531013581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_add_pim_test_mandatory_fields_blank.coverage" NAME="pytest for project.tests.ui.test_add_pim.test_mandatory_fields_blank Coverage Results" MODIFIED="1765335069101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_filter_by_status.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_filter_by_status Coverage Results" MODIFIED="1765422985835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_search_by_valid_id.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_search_by_valid_id Coverage Results" MODIFIED="1765594455299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_add_multiple_employees.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_add_multiple_employees Coverage Results" MODIFIED="1765425755785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_filter_by_include_then_subunit.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_filter_by_include_then_subunit Coverage Results" MODIFIED="1765458137830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1765769509368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_api_test_login_api_test_api_login_success.coverage" NAME="pytest for project.tests.api.test_login_api.test_api_login_success Coverage Results" MODIFIED="1764034981905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_pagination_observe.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_pagination_observe Coverage Results" MODIFIED="1765594643291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$employees.coverage" NAME="employees Coverage Results" MODIFIED="1764904530292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/tests/api" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_test_smoke_test_open_homepage.coverage" NAME="pytest for project.tests.test_smoke.test_open_homepage Coverage Results" MODIFIED="1765686204012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_search_test_edit_employee.coverage" NAME="pytest for project.tests.ui.test_pim_search.test_edit_employee Coverage Results" MODIFIED="1765524394767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_in_test_smoke_py.coverage" NAME="pytest in test_smoke.py Coverage Results" MODIFIED="1765686381329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_pagination.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_pagination Coverage Results" MODIFIED="1765426974874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_search_test_filter_by_status_and_subunit.coverage" NAME="pytest for project.tests.ui.test_pim_search.test_filter_by_status_and_subunit Coverage Results" MODIFIED="1765531082568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_login_test_login_empty_password.coverage" NAME="pytest for project.tests.ui.test_login.test_login_empty_password Coverage Results" MODIFIED="1765598572796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_search_test_edit_employee_name_update.coverage" NAME="pytest for project.tests.ui.test_pim_search.test_edit_employee_name_update Coverage Results" MODIFIED="1765469132275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_login_test_login_case_sensitive.coverage" NAME="pytest for project.tests.ui.test_login.test_login_case_sensitive Coverage Results" MODIFIED="1765598771704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_abc_test_login_and_get_employees.coverage" NAME="pytest for abc.test_login_and_get_employees Coverage Results" MODIFIED="1764040725050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_login_test_login_empty_username.coverage" NAME="pytest for project.tests.ui.test_login.test_login_empty_username Coverage Results" MODIFIED="1765598333858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_edit_employee_success.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_edit_employee_success Coverage Results" MODIFIED="1765594373077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_delete_employee_check.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_delete_employee_check Coverage Results" MODIFIED="1765591515347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_edit_employee.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_edit_employee Coverage Results" MODIFIED="1765525868510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_login_test_login_success.coverage" NAME="pytest for project.tests.ui.test_login.test_login_success Coverage Results" MODIFIED="1765679811678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$login_page.coverage" NAME="login_page Coverage Results" MODIFIED="1764556626164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/pages" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_search_test_add_employee_lastname_too_long.coverage" NAME="pytest for project.tests.ui.test_pim_search.test_add_employee_lastname_too_long Coverage Results" MODIFIED="1765505767782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_add_employee_lastname_too_long.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_add_employee_lastname_too_long Coverage Results" MODIFIED="1765593959151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_in_test_pim_crud_py.coverage" NAME="pytest in test_pim_crud.py Coverage Results" MODIFIED="1765593793882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_api_test_login_api_test_get_employee_list.coverage" NAME="pytest for project.tests.api.test_login_api.test_get_employee_list Coverage Results" MODIFIED="1764035209317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_filter_by_include_and_subunit.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_filter_by_include_and_subunit Coverage Results" MODIFIED="1765457163215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_login_test_logout_success.coverage" NAME="pytest for project.tests.ui.test_login.test_logout_success Coverage Results" MODIFIED="1765597532154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_api_test_login_api_test_login_and_get_employees.coverage" NAME="pytest for project.tests.api.test_login_api.test_login_and_get_employees Coverage Results" MODIFIED="1764041576628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_login_test_login_case_sensitive_success.coverage" NAME="pytest for project.tests.ui.test_login.test_login_case_sensitive_success Coverage Results" MODIFIED="1765599184640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1764730091459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/tests" />
     <SUITE FILE_PATH="coverage/PythonProject$config.coverage" NAME="config Coverage Results" MODIFIED="1764640396767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/utils" />
-    <SUITE FILE_PATH="coverage/PythonProject$employees.coverage" NAME="employees Coverage Results" MODIFIED="1764904530292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/project/tests/api" />
-    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_test_smoke_test_open_homepage.coverage" NAME="pytest for project.tests.test_smoke.test_open_homepage Coverage Results" MODIFIED="1764990557026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_edit_employee_name_update.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_edit_employee_name_update Coverage Results" MODIFIED="1765588705297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_pim_crud_test_add_employee_firstname_empty.coverage" NAME="pytest for project.tests.ui.test_pim_crud.test_add_employee_firstname_empty Coverage Results" MODIFIED="1765679845968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$pytest_for_project_tests_ui_test_login_test_01_login_success.coverage" NAME="pytest for project.tests.ui.test_login.test_01_login_success Coverage Results" MODIFIED="1765247407286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$pytest_in_test_login_api_py.coverage" NAME="pytest in test_login_api.py Coverage Results" MODIFIED="1764041489912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

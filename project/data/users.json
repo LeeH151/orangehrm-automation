@@ -3,8 +3,20 @@
     "username": "Admin",
     "password": "Admin@12345"
   },
-  "invalid_user": {
+  "invalid_password": {
     "username": "Admin",
-    "password": "wrongpass"
+    "password": "wrongpassword"
+  },
+  "empty_username": {
+    "username": "",
+    "password": "Admin@12345"
+  },
+  "empty_password": {
+    "username": "Admin",
+    "password": ""
+  },
+  "uppercase_username": {
+    "username": "ADMIN",
+    "password": "Admin@12345"
   }
 }
